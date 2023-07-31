@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/d8ee14c736.js" crossorigin="anonymous"></script>
+
     <title>Gaming Site Login</title>
 </head>
 <body>
@@ -50,7 +54,14 @@
         <li class="link-item"><a href="#">Cookies</a></li>
         <li class="link-item"><a href="#">Contact</a></li>
       </ul>
-      <div class="language-selector"></div>
+      <div class="language-selector">
+        <button onlick="myFunction()" class="dropbtn"><i class="fa-solid fa-globe dropbtn-icon"></i>English<i class="fa-solid fa-angle-down dropbtn-icon"></i></button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#">Français</a>
+            <a href="#">Español</a>
+            <a href="#">Deutsch</a>
+        </div>
+      </div>
     </div>
   </footer>  
 
