@@ -95,3 +95,7 @@ footer .content-wrapper {
     background-color: rgb(29, 58, 221);
     font-weight: bold;
 }
+
+.show {
+    display: block;
+}
