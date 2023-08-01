@@ -28,7 +28,9 @@ The goal of the initial project was to create a login form that displays wave an
 - Start the files from a boiler template.
 - Add a header and footer with links.
 - Create a company name and design a logo.
-- Add styles to the page.
+- Add initial styles to the page.
+- Add a language selector button in the footer.
+- Create functions for the footer button to display the language options menu when clicked(toggled) and close the options menu when the user clicks elsewhere on the page.
 
 ### Continued development
 
