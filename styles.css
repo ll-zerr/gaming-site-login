@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     background-color: steelblue;
     color: white;
@@ -13,12 +17,29 @@ body {
     margin: 0;
 }
 
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
 img {
     border-radius: 50%;
 }
 
 figure {
     margin: 0;
+}
+
+header .content-wrapper,
+main .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
