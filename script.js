@@ -1,18 +1,23 @@
-/* When user clicks button, toggle between hiding and showing dropdown content */
-function selectLanguage() {
-    document.getElementById("myDropdown").classList.toggle("show");
+const dropbtnContainer = document.querySelector(".dropbtn-container");
+
+/* Add an event listener to the container */
+dropbtnContainer.addEventListener("click", selectLanguage);
+
+
+/* When user clicks button or icon, toggle between hiding and showing dropdown content */
+function selectLanguage(event) {
+    const dropdownContent = document.getElementById("myDropdown");
+    if (event.target.matches('.dropbtn, .dropbtn-icon')) {
+        dropdownContent.classList.toggle("show");
+    } else {
+        dropdownContent.classList.remove('show');
+    }
 }
 
 /* close the dropdown if user clicks outside of content */
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
+window.addEventListener("click", function(event) {
+    const dropdownContent = document.getElementById("myDropdown");
+    if (!event.target.matches('.dropbtn, .dropbtn-icon')) {
+        dropdownContent.classList.remove('show');
     }
-};
+});
