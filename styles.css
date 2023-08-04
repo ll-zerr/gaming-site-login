@@ -24,6 +24,8 @@ h1 {
 
 h2 {
     font-size: 1.75rem;
+    /* text-align: center; */
+    margin-bottom: 30px;
 }
 
 img {
@@ -42,6 +44,87 @@ main .content-wrapper {
     align-items: center;
 }
 
+/************** Form styles **************/
+.form-container {
+    background-color: rgba(17, 40, 104, 0.486);
+    padding: 20px 40px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.form-container a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background: lightblue;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.text {
+    margin-top: 30px;
+}
+
+.form-control {
+    position: relative;
+    margin: 20px 0 40px;
+    /* width: 300px; */
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px white solid;
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 1.125rem;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: 0;
+    border-bottom-color: lightblue;
+}
+
+.form-control label {
+    position: absolute;
+    font-size: 1.125rem;
+    top: 15px;
+    left: 0;
+}
+
+.form-control label span {
+    display: inline-block;
+    /* font-size: 1.125rem; */
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+    color: lightblue;
+    transform: translateY(-30px);
+}
+
+/*********** Footer styles **************/
 footer {
     border-top: 2px solid rgb(201, 196, 196);
     border-width: 100%;
