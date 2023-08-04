@@ -12,8 +12,8 @@ body {
     background-color: steelblue;
     color: white;
     font-family: 'Muli', sans-serif;
-    height: 100vh;
-    overflow: hidden;
+    /* height: 100vh; */
+    /* overflow: hidden; */
     margin: 0;
 }
 
