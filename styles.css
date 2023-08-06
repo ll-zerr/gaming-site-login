@@ -37,6 +37,7 @@ h2 {
 
 img {
     border-radius: 50%;
+    max-width: 100%;
 }
 
 figure {
@@ -53,6 +54,13 @@ main .content-wrapper {
 
 main .content-wrapper {
     padding-bottom: 50px;
+}
+
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /************** Form styles **************/
@@ -138,7 +146,6 @@ main .content-wrapper {
 /*********** Footer styles **************/
 footer {
     border-top: 2px solid rgb(201, 196, 196);
-    border-width: 100%;
 }
 
 footer .content-wrapper {
@@ -215,4 +222,23 @@ footer .content-wrapper {
 
 .show {
     display: block;
+}
+
+@media only screen and (min-width:500px) {
+    header .content-wrapper {
+        flex-direction: row;
+    }
+
+    header figure {
+        width: 30%;
+        margin: 20px 20px 0;
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+    .link-item {
+        flex-basis: 33%;
+    }
 }
