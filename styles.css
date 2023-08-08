@@ -72,8 +72,14 @@ header figure {
 }
 
 .form-container a {
-    text-decoration: none;
     color: lightblue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.form-container a:hover,
+.link-item a:hover {
+    text-decoration: underline;
 }
 
 .btn {
@@ -84,6 +90,7 @@ header figure {
     padding: 15px;
     font-family: inherit;
     font-size: 1rem;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
 }
@@ -252,6 +259,10 @@ footer .content-wrapper {
         padding-top: 50px;
     }
 
+    .form-container {
+        padding: 40px;
+    }
+
     footer {
         border-top: none;
     }
@@ -263,4 +274,16 @@ footer .content-wrapper {
     .link-item {
         flex-basis: 33%;
     }
+}
+
+@media only screen and (min-width:1000px) {
+    footer .content-wrapper {
+        width: 60%;
+    }
+
+    .link-item {
+        flex-basis: 25%;
+        font-size: 0.90rem;
+    }
+
 }
