@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background-color: rgb(15, 74, 122);
+    background-color: rgb(12, 31, 84);
     color: white;
     font-family: 'Muli', sans-serif;
     /* height: 100vh; */
@@ -229,7 +229,7 @@ footer .content-wrapper {
 
 @media only screen and (min-width:500px) {
     body {
-        background-image: linear-gradient(0deg, rgba(86, 88, 94, 0.753), rgba(61, 61, 119, 0.753)), url(https://images.pexels.com/photos/7871540/pexels-photo-7871540.jpeg?auto=compress&cs=tinysrgb&w=600); 
+        background-image: linear-gradient(0deg, rgba(86, 88, 94, 0.356), rgba(61, 61, 119, 0.486)), url(https://images.pexels.com/photos/7871540/pexels-photo-7871540.jpeg?auto=compress&cs=tinysrgb&w=600); 
         background-position: center;
         background-size: cover;
     }
@@ -257,7 +257,7 @@ footer .content-wrapper {
     }
 
     footer, .form-container {
-        background-color: rgba(17, 40, 104, 0.555);
+        background-color: rgba(16, 37, 97, 0.60);
     }
 
     .link-item {
