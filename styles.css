@@ -155,8 +155,9 @@ footer .content-wrapper {
 }
 
 .footer-top {
-    margin: 30px 0;
-    color: rgb(201, 196, 196)
+    color: rgb(201, 196, 196);
+    margin: 0;
+    padding: 25px 0;
 }
 
 .footer-links {
@@ -180,7 +181,7 @@ footer .content-wrapper {
 }
 
 .dropbtn {
-    background-color: rgb(15, 74, 122);
+    background-color: rgba(17, 40, 104, 0.055);
     color: rgb(201, 196, 196);
     padding: 12px 0;
     font-size: 0.75rem;
@@ -201,8 +202,9 @@ footer .content-wrapper {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(15, 74, 122);
-    min-width: 150px;
+    background-color: rgb(17, 40, 104, 0.055);
+    border: 0.10px solid rgb(201, 196, 196);
+    min-width: 125px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -210,6 +212,7 @@ footer .content-wrapper {
 
 .dropdown-content a {
     color: rgb(201, 196, 196);
+    font-size: 0.75rem;
     padding: 5px 20px 5px 40px;
     text-decoration: none;
     display: block;
@@ -226,13 +229,14 @@ footer .content-wrapper {
 
 @media only screen and (min-width:500px) {
     body {
-        background-image: linear-gradient(0deg, rgba(86, 88, 94, 0.5), rgba(50, 50, 172, 0.5)), url(https://images.pexels.com/photos/7871540/pexels-photo-7871540.jpeg?auto=compress&cs=tinysrgb&w=600); 
+        background-image: linear-gradient(0deg, rgba(86, 88, 94, 0.753), rgba(61, 61, 119, 0.753)), url(https://images.pexels.com/photos/7871540/pexels-photo-7871540.jpeg?auto=compress&cs=tinysrgb&w=600); 
         background-position: center;
         background-size: cover;
     }
 
     header .content-wrapper {
         flex-direction: row;
+        justify-content: flex-start;
     }
 
     header figure {
@@ -242,6 +246,18 @@ footer .content-wrapper {
 
     h1 {
         text-align: left;
+    }
+
+    main .content-wrapper {
+        padding-top: 50px;
+    }
+
+    footer {
+        border-top: none;
+    }
+
+    footer, .form-container {
+        background-color: rgba(17, 40, 104, 0.555);
     }
 
     .link-item {
