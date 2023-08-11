@@ -8,6 +8,7 @@ The goal of the initial project was to create a login form that displays wave an
 
 - Create a company name and logo.
 - Add a header and footer to the page.
+- Enable language translation with the selected language button.
 
 ### View My Project: 
 
@@ -31,6 +32,7 @@ The goal of the initial project was to create a login form that displays wave an
 - Add initial styles to the page.
 - Add a language selector button in the footer.
 - Create functions for the footer button to display the language options menu when clicked(toggled) and close the options menu when the user clicks elsewhere on the page.
+- Update the HTML and JS files to enable language translation when the user selects their language of choice.
 
 ### Continued development
 
