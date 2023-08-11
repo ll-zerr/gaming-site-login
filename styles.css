@@ -12,7 +12,11 @@ body {
     background-color: rgb(12, 31, 84);
     color: white;
     font-family: 'Muli', sans-serif;
-    /* height: 100vh; */
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+    min-height: 100vh;
     /* overflow: hidden; */
     scrollbar-width: none;
     overflow-y: scroll;
@@ -77,8 +81,7 @@ header figure {
     text-decoration: none;
 }
 
-.form-container a:hover,
-.link-item a:hover {
+.form-container a:hover {
     text-decoration: underline;
 }
 
@@ -165,6 +168,7 @@ footer .content-wrapper {
     color: rgb(201, 196, 196);
     margin: 0;
     padding: 25px 0;
+    font-size: 0.99rem;
 }
 
 .footer-links {
@@ -185,6 +189,10 @@ footer .content-wrapper {
 .link-item a {
     text-decoration: none;
     color: rgb(201, 196, 196);
+}
+
+.link-item a:hover {
+    text-decoration: underline;
 }
 
 .dropbtn {
@@ -238,6 +246,7 @@ footer .content-wrapper {
     body {
         background-image: linear-gradient(0deg, rgba(86, 88, 94, 0.356), rgba(61, 61, 119, 0.486)), url(https://images.pexels.com/photos/7871540/pexels-photo-7871540.jpeg?auto=compress&cs=tinysrgb&w=600); 
         background-position: center;
+        background-repeat: no-repeat;
         background-size: cover;
     }
 
@@ -278,7 +287,7 @@ footer .content-wrapper {
 
 @media only screen and (min-width:1000px) {
     footer .content-wrapper {
-        width: 60%;
+        width: 65%;
     }
 
     .link-item {

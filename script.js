@@ -61,11 +61,11 @@ const translations = {
             registerText: "Vous n'avez pas de compte ? <a href='#'>Inscrivez-vous maintenant.</a>",
             footerTop: "Pour toute question générale, voir ci-dessous :",
             questionsLink: "FAQ",
-            helpLink: "Support",
+            helpLink: "Aide",
             merchLink: "Boutique",
             termsLink: "Conditions d'utilisation",
             privacyLink: "Confidentialité",
-            cookiesLink: "Cookies",
+            cookiesLink: "Paramètres du tésmoins",
             contactLink: "Contact",
             currentLang: "Français"
         }
@@ -81,13 +81,13 @@ function setLanguage(lang) {
     document.querySelector(".btn").innerText = translations[lang].loginButtonText;
     document.querySelector(".text").innerHTML = translations[lang].registerText;
     document.querySelector(".footer-top").innerHTML = translations[lang].footerTop;
-    document.querySelector(".questions").innerText = translations[lang].questionsLink;
-    document.querySelector(".help").innerText = translations[lang].helpLink;
-    document.querySelector(".merch").innerText = translations[lang].merchLink;
-    document.querySelector(".terms").innerText = translations[lang].termsLink;
-    document.querySelector(".privacy").innerText = translations[lang].privacyLink;
-    document.querySelector(".cookies").innerText = translations[lang].cookiesLink;
-    document.querySelector(".contact").innerText = translations[lang].contactLink;
+    document.querySelector(".questions a").innerText = translations[lang].questionsLink;
+    document.querySelector(".help a").innerText = translations[lang].helpLink;
+    document.querySelector(".merch a").innerText = translations[lang].merchLink;
+    document.querySelector(".terms a").innerText = translations[lang].termsLink;
+    document.querySelector(".privacy a").innerText = translations[lang].privacyLink;
+    document.querySelector(".cookies a").innerText = translations[lang].cookiesLink;
+    document.querySelector(".contact a").innerText = translations[lang].contactLink;
     document.querySelector(".dropbtn span").innerText = translations[lang].currentLang;
     animateLabels();
 }
