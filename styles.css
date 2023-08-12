@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
 
+:root {
+    --medium-gray: rgb(201, 196, 196);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -155,7 +159,7 @@ header figure {
 
 /*********** Footer styles **************/
 footer {
-    border-top: 2px solid rgb(201, 196, 196);
+    border-top: 2px solid var(--medium-gray);
 }
 
 footer .content-wrapper {
@@ -165,7 +169,7 @@ footer .content-wrapper {
 }
 
 .footer-top {
-    color: rgb(201, 196, 196);
+    color: var(--medium-gray);
     margin: 0;
     padding: 25px 0;
     font-size: 0.99rem;
@@ -188,7 +192,7 @@ footer .content-wrapper {
 
 .link-item a {
     text-decoration: none;
-    color: rgb(201, 196, 196);
+    color: var(--medium-gray);
 }
 
 .link-item a:hover {
@@ -197,10 +201,10 @@ footer .content-wrapper {
 
 .dropbtn {
     background-color: rgba(17, 40, 104, 0.055);
-    color: rgb(201, 196, 196);
+    color: var(--medium-gray);
     padding: 12px 0;
     font-size: 0.75rem;
-    border-color: rgb(201, 196, 196);
+    border-color: var(--medium-gray);
     border: 0.5px solid;
     cursor: pointer;
 }
@@ -218,7 +222,7 @@ footer .content-wrapper {
     display: none;
     position: absolute;
     background-color: rgb(17, 40, 104, 0.055);
-    border: 0.10px solid rgb(201, 196, 196);
+    border: 0.10px solid var(--medium-gray);
     min-width: 125px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -226,7 +230,7 @@ footer .content-wrapper {
 }
 
 .dropdown-content a {
-    color: rgb(201, 196, 196);
+    color: var(--medium-gray);
     font-size: 0.75rem;
     padding: 5px 20px 5px 40px;
     text-decoration: none;
