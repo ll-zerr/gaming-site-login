@@ -36,7 +36,8 @@ The goal of the initial project was to create a login form that displays wave an
 - Create functions for the footer button to display the language options menu when clicked(toggled) and close the options menu when the user clicks elsewhere on the page.
 - Update the HTML and JS files to enable language translation when the user selects their language of choice.
 - Fix the issue with the footer links that arose when coding for language translation.
-- Create a CSS custom variable for the border, text, and icons in the footer.
+- Create a CSS custom variable for the borders, text, and icons in the footer.
+- Validate HTML and CSS code.
 
 ### Continued development
 

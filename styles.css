@@ -21,7 +21,6 @@ body {
     align-items: stretch;
     flex-direction: column;
     min-height: 100vh;
-    /* overflow: hidden; */
     scrollbar-width: none;
     overflow-y: scroll;
     margin: 0;
@@ -39,7 +38,6 @@ h1 {
 
 h2 {
     font-size: 1.75rem;
-    /* text-align: center; */
     margin-bottom: 30px;
 }
 
@@ -73,7 +71,6 @@ header figure {
 
 /************** Form styles **************/
 .form-container {
-    /* background-color: rgba(17, 40, 104, 0.486); */
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 25px;
@@ -117,7 +114,6 @@ header figure {
 .form-control {
     position: relative;
     margin: 20px 0 40px;
-    /* width: 300px; */
 }
 
 .form-control input {
@@ -146,7 +142,6 @@ header figure {
 
 .form-control label span {
     display: inline-block;
-    /* font-size: 1.125rem; */
     min-width: 5px;
     transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
@@ -254,6 +249,10 @@ footer .content-wrapper {
         background-size: cover;
     }
 
+    h1 {
+        text-align: left;
+    }
+
     header .content-wrapper {
         flex-direction: row;
         justify-content: flex-start;
@@ -262,10 +261,6 @@ footer .content-wrapper {
     header figure {
         max-width: 100px;
         margin: 20px 20px 0;
-    }
-
-    h1 {
-        text-align: left;
     }
 
     main .content-wrapper {

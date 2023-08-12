@@ -73,11 +73,11 @@ const translations = {
 
 function setLanguage(lang) {
     const selectedLanguage = document.getElementById("selectedLanguage");
-    selectedLanguage.innerText = translations[lang].languageName;
+    selectedLanguage.innerText = translations[lang].currentLang;
     document.querySelector("h1").innerText = translations[lang].welcome;
     document.querySelector("h2").innerText = translations[lang].loginPrompt;
-    document.querySelector("label[for='Email']").innerText = translations[lang].emailLabel;
-    document.querySelector("label[for='Password']").innerText = translations[lang].passwordLabel;
+    document.querySelector("label[for='email']").innerText = translations[lang].emailLabel;
+    document.querySelector("label[for='password']").innerText = translations[lang].passwordLabel;
     document.querySelector(".btn").innerText = translations[lang].loginButtonText;
     document.querySelector(".text").innerHTML = translations[lang].registerText;
     document.querySelector(".footer-top").innerHTML = translations[lang].footerTop;
@@ -88,7 +88,6 @@ function setLanguage(lang) {
     document.querySelector(".privacy a").innerText = translations[lang].privacyLink;
     document.querySelector(".cookies a").innerText = translations[lang].cookiesLink;
     document.querySelector(".contact a").innerText = translations[lang].contactLink;
-    document.querySelector(".dropbtn span").innerText = translations[lang].currentLang;
     animateLabels();
 }
 
