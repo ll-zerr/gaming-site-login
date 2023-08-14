@@ -36,9 +36,17 @@ h1 {
     text-shadow: 3px 4px 2px #2151c1;
 }
 
-h2 {
+h2, h3 {
     font-size: 1.75rem;
     margin-bottom: 30px;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    margin: 0;
 }
 
 img {
@@ -239,6 +247,28 @@ footer .content-wrapper {
 
 .show {
     display: block;
+}
+
+/***************** FAQ styles **********************/
+.faq .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-questions {
+    width:80%
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-content {
+    background-color: rgba(158, 193, 233, 0.404);
+    margin-bottom: 10px;
 }
 
 @media only screen and (min-width:500px) {

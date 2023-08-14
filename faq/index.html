@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/d8ee14c736.js" crossorigin="anonymous"></script>
+
+    <title>Gaming Site Login</title>
+</head>
+<body>
+  <header>
+    <div class="content-wrapper">
+      <figure>
+        <a class="logo" href="#"><img src="../img/gaming_logo.png" alt="GlobalGameNet logo"></a>
+      </figure>
+
+      <h1>Welcome to GlobalGameNet!</h1>
+    </div>
+  </header>
+
+  <main class="faq">
+    <div class="content-wrapper">
+      <h3 class="faq-headline">Frequently Asked Questions</h3>
+
+      <div class="faq-questions">
+        <div class="content-wrapper">
+            <div class="faq-content">
+                <div class="question">
+                    <h4>How do I create an account on GlobalGameNet?</h4>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <p>Creating an account is easy! Just click on the "Register" button below, fill in your details, choose a username and password, and you're all set to start exploring the world of kid-friendly gaming.</p>
+            </div>
+
+            <div class="faq-content">
+                <h4>Are the games on GlobalGameNet safe for my kids to play?</h4>
+                <p>Yes, all the games available on GlobalGameNet are carefully curated to ensure they are kid-friendly and appropriate for various age groups. We prioritize safety and entertainment, so you can enjoy peace of mind while your kids have fun.</p>
+            </div>
+
+            <div class="faq-content">
+                <h4>Can I play with friends who are in different parts of the world?</h4>
+                <p>Absolutely! GlobalGameNet connects gamers from all over the globe. Once you've created an account, you can invite your friends to join you in the games or even make new friends while playing.</p>
+            </div>
+
+            <div class="faq-content">
+                <h4>Do I need to download any software to play the games?</h4>
+                <p>No downloads required! All the games are browser-based, so you can start playing right away. Just log in to your account, choose a game, and enjoy the adventure.</p>
+            </div>
+
+            <div class="faq-content">
+                <h4>Are there in-game purchases or microtransactions?</h4>
+                <p>GlobalGameNet is committed to providing a safe and enjoyable gaming experience for kids without any in-game purchases or microtransactions. All the games are fully accessible once you're logged in.</p>
+            </div>
+
+            <div class="faq-content">
+                <h4>How can I report inappropriate behavior or content?</h4>
+                <p>We take safety seriously. If you encounter any inappropriate behavior or content while playing, you can report it directly within the game. Our moderation team will review and take appropriate action to maintain a positive gaming environment.</p>
+            </div>
+        </div>
+
+        <div class="faq-form">
+            <form action="#" method="post">
+                <div class="form-control">
+                  <input type="text" id="email" name="email" required>
+                  <label for="email">Email</label>
+                </div>
+                <div class="form-control">
+                  <input type="text" id="password"  name="password" required>
+                  <label for="password">Password</label>
+                </div>
+                <button class="btn">Login</button>
+                <p class="text">Don't have an account? <a href="">Register now.</a></p>
+              </form>
+        </div>
+      </div>      
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="content-wrapper">
+      <p class="footer-top">For General Inquires, See Below:</p>
+      <ul class="footer-links">
+        <li class="link-item questions"><a href="#">FAQ</a></li>
+        <li class="link-item help"><a href="#">Support</a></li>
+        <li class="link-item merch"><a href="#">Shop</a></li>
+        <li class="link-item terms"><a href="#">Terms of Use</a></li>
+        <li class="link-item privacy"><a href="#">Privacy</a></li>
+        <li class="link-item cookies"><a href="#">Cookies</a></li>
+        <li class="link-item contact"><a href="#">Contact</a></li>
+      </ul>
+      <div class="language-selector">
+        <div class="dropbtn-container">
+          <button onclick="selectLanguage()" class="dropbtn"><i class="fa-solid fa-globe dropbtn-icon"></i><span id="selectedLanguage">English</span><i class="fa-solid fa-angle-down dropbtn-icon"></i></button>
+        </div>
+        
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#" data-lang="en">English</a>
+            <a href="#" data-lang="fr">Français</a>
+        </div>
+      </div>
+    </div>
+  </footer>  
+
+  <script src="../script.js"></script>
+</body>
+</html>
