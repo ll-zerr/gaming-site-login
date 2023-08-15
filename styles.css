@@ -12,7 +12,7 @@ html {
     font-size: 16px;
 }
 
-body {
+body.home {
     background-color: rgb(12, 31, 84);
     color: white;
     font-family: 'Muli', sans-serif;
@@ -26,7 +26,7 @@ body {
     margin: 0;
 }
 
-body::-webkit-scrollbar {
+body.home::-webkit-scrollbar {
     display: none;
 }
 
@@ -47,6 +47,7 @@ h3 {
 
 h4 {
     margin: 0;
+    padding: 20px;
 }
 
 img {
@@ -249,7 +250,25 @@ footer .content-wrapper {
     display: block;
 }
 
-/***************** FAQ styles **********************/
+/***************** FAQ page styles **********************/
+body.faq {
+    background-color: rgb(12, 31, 84);
+    color: white;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+    min-height: 100vh;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    margin: 0;
+}
+
+body.faq::-webkit-scrollbar {
+    display: none;
+}
+
 .faq .content-wrapper {
     display: flex;
     flex-direction: column;
@@ -264,6 +283,7 @@ footer .content-wrapper {
 .question {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .faq-content {
@@ -271,8 +291,21 @@ footer .content-wrapper {
     margin-bottom: 10px;
 }
 
+.faq-content p {
+    border-top: 2px solid rgb(12, 31, 84);
+    margin-top: 0;
+    padding: 20px;
+}
+
+.faq-icon {
+    padding: 20px;
+    font-size: 1.75em;
+}
+
+
+
 @media only screen and (min-width:500px) {
-    body {
+    body.home {
         background-image: linear-gradient(0deg, rgba(86, 88, 94, 0.356), rgba(61, 61, 119, 0.486)), url(https://images.pexels.com/photos/7871540/pexels-photo-7871540.jpeg?auto=compress&cs=tinysrgb&w=600); 
         background-position: center;
         background-repeat: no-repeat;
