@@ -75,7 +75,8 @@ function setLanguage(lang) {
     const selectedLanguage = document.getElementById("selectedLanguage");
     selectedLanguage.innerText = translations[lang].currentLang;
     document.querySelector("h1").innerText = translations[lang].welcome;
-    document.querySelector("h2").innerText = translations[lang].loginPrompt;
+    const h2 = document.querySelector("h2");
+    if (h2) h2.innerText = translations[lang].loginPrompt;
     document.querySelector("label[for='email']").innerText = translations[lang].emailLabel;
     document.querySelector("label[for='password']").innerText = translations[lang].passwordLabel;
     document.querySelector(".btn").innerText = translations[lang].loginButtonText;
@@ -102,3 +103,21 @@ languageLinks.forEach(link => {
 
 setLanguage("en");
 animateLabels();
+
+document.querySelectorAll('.faq-content p').forEach(p => {
+    p.style.display = 'none';
+});
+
+// enable view of answers on the FAQ page
+const faqIcons = document.querySelectorAll(".faq-icon");
+
+faqIcons.forEach(icon => {
+    icon.addEventListener("click", function() {
+        const questionDiv = this.parentElement;
+        const answerPara = questionDiv.nextElementSibling;
+        // toggle the visibility of the answer paragraph
+        answerPara.style.display = answerPara.style.display === 'none' ? 'block' : 'none';
+        // rotate the icon 45 degrees if the answer is visible, or reset it if not
+        this.style.transform = answerPara.style.display === 'none' ? 'rotate(0deg)' : 'rotate(45deg)';
+    });
+});

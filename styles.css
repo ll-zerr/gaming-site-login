@@ -46,6 +46,7 @@ h3 {
 }
 
 h4 {
+    font-size: 1.125rem;
     margin: 0;
     padding: 20px;
 }
@@ -300,6 +301,7 @@ body.faq::-webkit-scrollbar {
 .faq-icon {
     padding: 20px;
     font-size: 1.75em;
+    transition: transform 0.3s ease;
 }
 
 
