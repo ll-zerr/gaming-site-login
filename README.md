@@ -10,7 +10,7 @@ The goal of the initial project was to create a login form that displays wave an
 - Add a header and footer to the page.
 - Enable language translation with the selected language button.
 
-### View My Project: 
+### View My Project: [https://ll-zerr.github.io/gaming-site-login/](https://ll-zerr.github.io/gaming-site-login/)
 
 ![Screenshot](img/smartmockups_gaming-login.jpg)
 
