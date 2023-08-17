@@ -287,6 +287,10 @@ body.faq::-webkit-scrollbar {
     align-items: center;
 }
 
+.question:hover {
+    background-color: rgba(164, 199, 238, 0.404);
+}
+
 .faq-content {
     background-color: rgba(158, 193, 233, 0.404);
     margin-bottom: 10px;
@@ -304,6 +308,34 @@ body.faq::-webkit-scrollbar {
     transition: transform 0.3s ease;
 }
 
+.faq-form-container {
+    border: 1px dashed var(--medium-gray);
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.faq-form .form-control {
+    background-color: rgba(15, 38, 100, 0.973);
+    /* border: 1px solid var(--medium-gray); */
+    padding: 30px 15px 5px 15px;
+    margin: 10px 0 20px;
+}
+
+.faq-form .form-control input {
+    padding: 0;
+}
+
+.faq-form .form-control label {
+    top: 20px;
+    left: 15px;
+}
+
+.faq-form .form-control input:focus + label span,
+.faq-form .form-control input:valid + label span {
+    color: lightblue;
+    font-size:smaller ;
+    transform: translateY(-20px);
+}
 
 
 @media only screen and (min-width:500px) {
