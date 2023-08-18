@@ -312,7 +312,13 @@ body.faq::-webkit-scrollbar {
 .faq-form-container {
     border: 1px dashed var(--medium-gray);
     padding: 20px;
-    margin-top: 30px;
+    margin: 30px auto 0;
+    max-width: 450px;
+    text-align: center;
+}
+
+.faq-form-container p {
+    font-size: 1.125rem;
 }
 
 .faq-form .form-control {
@@ -336,6 +342,16 @@ body.faq::-webkit-scrollbar {
     color: lightblue;
     font-size:smaller ;
     transform: translateY(-20px);
+}
+
+.faq-form a {
+    color: lightblue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.faq-form a:hover {
+    text-decoration: underline;
 }
 
 
