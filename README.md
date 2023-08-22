@@ -50,3 +50,5 @@ Original Project idea: Brad Traversy, Florin Pop [Udemy course 50 Projects in 50
 Original HTML, CSS & Javascript provided by: Brad Traversy, Florin Pop [Udemy course 50 Projects in 50 Days](https://www.udemy.com/course/50-projects-50-days/?src=sac&kw=50+projects+50+days)
 
 Background Image: [VAZHNIK](https://www.pexels.com/@vazhnik/) on [Pexels](https://www.pexels.com/photo/a-man-and-a-woman-using-joystick-while-playing-video-game-7871540/)
+
+FAQ page animation: [Michelle Barker](https://codepen.io/michellebarker/pen/gOMBPQj) on [CodePen](https://codepen.io/)
