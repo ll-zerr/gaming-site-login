@@ -2,6 +2,12 @@
 
 :root {
     --medium-gray: rgb(201, 196, 196);
+    --d: 2500ms;
+    --angle: 90deg;
+    --gradX: 100%;
+    --gradY: 50%;
+    --c1: rgba(168, 239, 255, 1);
+    --c2: rgba(168, 239, 255, 0.1);
 }
 
 * {
@@ -327,15 +333,6 @@ body.faq::-webkit-scrollbar {
     initial-value: 0%;
     inherits: true;
 }
-  
-  :root {
-      --d: 2500ms;
-      --angle: 90deg;
-      --gradX: 100%;
-      --gradY: 50%;
-      --c1: rgba(168, 239, 255, 1);
-      --c2: rgba(168, 239, 255, 0.1);
-  }
 
 .faq-form-container {
     border: 0.35rem solid;
