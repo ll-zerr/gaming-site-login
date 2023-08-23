@@ -305,6 +305,7 @@ body.faq::-webkit-scrollbar {
 
 .faq-content p {
     border-top: 2px solid rgb(12, 31, 84);
+    font-size: 1.125rem;
     margin-top: 0;
     padding: 20px;
 }
@@ -410,6 +411,17 @@ body.faq::-webkit-scrollbar {
     text-decoration: underline;
 }
 
+@media only screen and (max-width:350px) {
+    /* FAQ styles */
+    h4 {
+        font-size: 0.95rem;
+        padding-right: 5px;
+    }
+
+    .faq-icon {
+        padding-left: 0;
+    }
+}
 
 @media only screen and (min-width:500px) {
     /* General Styles */
