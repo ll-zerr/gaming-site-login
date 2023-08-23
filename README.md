@@ -17,7 +17,7 @@ The goal of the initial project was to create a login form that displays wave an
 ## Features
 
 - Login form inputs display wave animation when clicked.
-- Page translates to the language of choice.
+- Login page translates to the language of choice.
 - Layout is responsive to screen size.
 
 ## Technologies Used
@@ -37,6 +37,7 @@ The goal of the initial project was to create a login form that displays wave an
 - Update the HTML and JS files to enable language translation when the user selects their language of choice.
 - Fix the issue with the footer links that arose when coding for language translation.
 - Create a CSS custom variable for the borders, text, and icons in the footer.
+- Add the FAQ page and website disclaimer.
 - Validate HTML and CSS code.
 
 ### Continued development
