@@ -253,10 +253,43 @@ footer .content-wrapper {
     font-weight: bold;
 }
 
+.disclaimer-box {
+    background-color: #fff;
+    border-radius: 10px;
+    color: #000;
+    display: none;
+    position: absolute;
+    inset: 0;
+    margin: 220px auto;
+    width: 90%;
+    height: 70vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.disclaimer-box h3 {
+    text-decoration: underline;
+}
+
+.box-wrapper {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(29, 58, 221);
+    color: white;
+    border: none;
+    border-radius: 20%;
+    font-size: 1.125rem;
+}
+
 .show {
     display: block;
 }
-
 /***************** FAQ page styles **********************/
 body.faq {
     background-color: rgb(12, 31, 84);
@@ -466,6 +499,12 @@ body.faq::-webkit-scrollbar {
         flex-basis: 33%;
     }
 
+    .disclaimer-box {
+        height: 80vh;
+        margin-top: 150px;
+        width: 70%;
+    }
+
     /* FAQ styles */
     .faq header .content-wrapper {
         flex-direction: row;
@@ -485,6 +524,10 @@ body.faq::-webkit-scrollbar {
     .link-item {
         flex-basis: 25%;
         font-size: 0.90rem;
+    }
+
+    .disclaimer-box {
+        width: 60%;
     }
 
     /* FAQ styles */

@@ -50,6 +50,7 @@ const translations = {
             privacyLink: "Privacy",
             cookiesLink: "Cookies",
             contactLink: "Contact",
+            disclaimerLink: "Disclaimer",
             currentLang: "English"
         },
         fr: {
@@ -67,6 +68,7 @@ const translations = {
             privacyLink: "Confidentialité",
             cookiesLink: "Paramètres du tésmoins",
             contactLink: "Contact",
+            disclaimerLink: "Clause de non-responsabilité",
             currentLang: "Français"
         }
 };
@@ -89,6 +91,7 @@ function setLanguage(lang) {
     document.querySelector(".privacy a").innerText = translations[lang].privacyLink;
     document.querySelector(".cookies a").innerText = translations[lang].cookiesLink;
     document.querySelector(".contact a").innerText = translations[lang].contactLink;
+    document.querySelector(".disclaimer a").innerText = translations[lang].disclaimerLink;
     animateLabels();
 }
 
@@ -103,6 +106,22 @@ languageLinks.forEach(link => {
 
 setLanguage("en");
 animateLabels();
+
+// Show or hide disclaimer pop-up box
+const disclaimerLink = document.querySelector(".link-item.disclaimer a");
+const disclaimerBox = document.querySelector(".disclaimer-box");
+const closeButton = document.querySelector(".close-btn");
+
+disclaimerLink.addEventListener("click", function(event) {
+    event.preventDefault();
+    disclaimerBox.classList.add("show");
+    window.scrollTo({top:0, left:0, behavior: 'smooth'});
+});
+
+closeButton.addEventListener("click", function(event) {
+    event.stopPropagation(); // prevent the click event from bubbling up to the disclaimer box
+    disclaimerBox.classList.remove("show");
+});
 
 document.querySelectorAll('.faq-content p').forEach(p => {
     p.style.display = 'none';
