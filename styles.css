@@ -463,6 +463,40 @@ body.privacy::-webkit-scrollbar {
     display: none;
 }
 
+.privacy header .content-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    /* position: relative; */
+    padding-bottom: 10px;
+}
+
+.privacy header figure {
+    width: 30%;
+    margin: 20px 5px;
+}
+
+.privacy header h2 {
+    font-size: 1.50rem;
+    margin: 0;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* position: absolute; */
+    /* top: 90px; */
+    /* right: 10px; */
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
 main.privacy .content-wrapper {
     background-color: #fff;
 }
@@ -473,6 +507,21 @@ main.privacy .content-wrapper {
     color: #000;
 }
 
+.statement .content h4 {
+    text-decoration: underline;
+}
+
+.statement .content p {
+    padding: 0 20px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+#login-btn {
+    background-color: #2151c1;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
 
 @media only screen and (max-width:350px) {
     /* FAQ styles */
