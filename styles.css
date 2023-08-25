@@ -444,6 +444,36 @@ body.faq::-webkit-scrollbar {
     text-decoration: underline;
 }
 
+/* Privacy styles*/
+body.privacy {
+    background-color: rgb(12, 31, 84);
+    color: white;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: column;
+    min-height: 100vh;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    margin: 0;
+}
+
+body.privacy::-webkit-scrollbar {
+    display: none;
+}
+
+main.privacy .content-wrapper {
+    background-color: #fff;
+}
+
+.privacy-headline,
+.statement .content h4,
+.statement .content p {
+    color: #000;
+}
+
+
 @media only screen and (max-width:350px) {
     /* FAQ styles */
     h4 {

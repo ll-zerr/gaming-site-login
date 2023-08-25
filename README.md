@@ -42,7 +42,7 @@ The goal of the initial project was to create a login form that displays wave an
 
 ### Continued development
 
-This was the first time I have attempted to code a page with the language selection option. I wanted to achieve this goal with javascript only and not rely on other sources to translate the page as the page content was minimal. I enjoyed the challenge and will likely investigate this further to utilize this concept in future projects.
+This was the first time I have attempted to code a page with the language selection option. I wanted to achieve this goal with javascript only and not rely on other sources to translate the page as the login page content was minimal. I enjoyed the challenge and will likely investigate this further to utilize this concept in future projects.
 
 ## Acknowledgements
 
