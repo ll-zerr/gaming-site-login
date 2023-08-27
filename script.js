@@ -1,8 +1,12 @@
-const dropbtnContainer = document.querySelector(".dropbtn-container");
+const dropbtnContainer = document.querySelector(".dropbtn-container .dropbtn");
 const labels = document.querySelectorAll(".form-control label");
 
 // Add an event listener to the footer btn container
-dropbtnContainer.addEventListener("click", selectLanguage);
+if (dropbtnContainer) {
+    dropbtnContainer.addEventListener("click", function(event) {
+        selectLanguage(event);
+    });
+}
 
 
 // When user clicks button or icon, toggle between hiding and showing dropdown content
@@ -96,6 +100,8 @@ function setLanguage(lang) {
 }
 
 const languageLinks = document.querySelectorAll(".dropdown-content a");
+// console.log(languageLinks);
+if (languageLinks.length > 1 ) {
 languageLinks.forEach(link => {
     link.addEventListener("click", function(event) {
         event.preventDefault();
@@ -103,8 +109,11 @@ languageLinks.forEach(link => {
         setLanguage(selectedLang);
     });
 });
+} else {
+    console.log("Only one language option available");
+}
 
-setLanguage("en");
+// setLanguage("en");
 animateLabels();
 
 // Show or hide disclaimer pop-up box
