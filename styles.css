@@ -467,13 +467,12 @@ body.privacy::-webkit-scrollbar {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    /* position: relative; */
     padding-bottom: 10px;
 }
 
 .privacy header figure {
     width: 30%;
-    margin: 20px 5px;
+    margin: 20px 5px 0;
 }
 
 .privacy header h2 {
@@ -481,14 +480,18 @@ body.privacy::-webkit-scrollbar {
     margin: 0;
 }
 
+nav {
+    align-self: flex-end;
+    margin-left: auto;
+    /* margin-right: 20px; */
+    padding-bottom: 10px;
+}
+
 .nav-list {
     display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    /* position: absolute; */
-    /* top: 90px; */
-    /* right: 10px; */
 }
 
 .nav-item {
