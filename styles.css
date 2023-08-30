@@ -504,10 +504,27 @@ main.privacy .content-wrapper {
     background-color: #fff;
 }
 
+.home-link {
+    color: #2151c1;
+    font-size: 0.95rem;
+    padding: 20px 20px 0;
+    align-self: flex-start;
+    text-decoration: none;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+
 .privacy-headline,
 .statement .content h4,
 .statement .content p {
     color: #000;
+    text-align: left;
+}
+
+.privacy-headline {
+    padding: 0 20px;
 }
 
 .statement .content h4 {
@@ -596,6 +613,12 @@ main.privacy .content-wrapper {
     .faq-headline {
         margin: 0;
     }
+
+    /* Privacy Styles*/
+    main.privacy .content-wrapper {
+        padding-top: 0;
+        align-items: flex-start;
+    }
 }
 
 @media only screen and (min-width:1000px) {
@@ -632,6 +655,26 @@ main.privacy .content-wrapper {
 
     p, .faq-form .btn {
         font-size: 1.25rem;
+    }
+
+    /* Privacy styles*/
+    .privacy header .content-wrapper,
+    .statement .content-wrapper {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .home-link,
+    .privacy-headline {
+        padding-left: 30px;
+    }
+
+    .statement .content p {
+        padding: 0 30px 20px;
+    }
+
+    .privacy footer .content-wrapper {
+        width: 75%;
     }
 
 }
