@@ -498,6 +498,12 @@ nav {
     color: #fff;
     text-decoration: none;
     margin-right: 20px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.nav-item:hover {
+    border: 2px solid lightblue;
 }
 
 main.privacy .content-wrapper {
@@ -539,8 +545,6 @@ main.privacy .content-wrapper {
 
 #login-btn {
     background-color: #2151c1;
-    border-radius: 5px;
-    padding: 5px 10px;
 }
 
 @media only screen and (max-width:350px) {
