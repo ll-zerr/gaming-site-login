@@ -120,22 +120,32 @@ animateLabels();
 const disclaimerLink = document.querySelector(".link-item.disclaimer a");
 const disclaimerBox = document.querySelector(".disclaimer-box");
 const closeButton = document.querySelector(".close-btn");
+const bodyElement = document.body; //select the body element
 const privacyPage = document.querySelector("main.privacy .content-wrapper");
 const privacyContent = document.getElementById("privacy-content");
+
 
 disclaimerLink.addEventListener("click", function(event) {
     event.preventDefault();
     disclaimerBox.classList.add("show");
     window.scrollTo({top:0, left:0, behavior: 'smooth'});
-    privacyContent.style.backgroundColor = "rgba(10, 35, 81, 0.5)";
-    privacyPage.style.backgroundColor = "rgba(10, 35, 81, 0.5)";
+
+    if (bodyElement.classList.contains("privacy")) {
+        privacyContent.style.backgroundColor = "rgba(10, 35, 81, 0.5)";
+        privacyPage.style.backgroundColor = "rgba(10, 35, 81, 0.5)";
+    }
+    
 });
 
 closeButton.addEventListener("click", function(event) {
     event.stopPropagation(); // prevent the click event from bubbling up to the disclaimer box
     disclaimerBox.classList.remove("show");
-    privacyContent.style.backgroundColor = "white";
-    privacyPage.style.backgroundColor = "white";
+
+    if (bodyElement.classList.contains("privacy")) {
+        privacyContent.style.backgroundColor = "white";
+        privacyPage.style.backgroundColor = "white";
+    }
+    
 });
 
 document.querySelectorAll('.faq-content p').forEach(p => {
