@@ -285,6 +285,7 @@ footer .content-wrapper {
     border: none;
     border-radius: 20%;
     font-size: 1.125rem;
+    padding: 5px 10px;
 }
 
 .show {
