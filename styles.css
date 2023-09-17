@@ -286,6 +286,7 @@ footer .content-wrapper {
     border-radius: 20%;
     font-size: 1.125rem;
     padding: 5px 10px;
+    cursor: pointer;
 }
 
 .show {
@@ -348,6 +349,10 @@ body.faq::-webkit-scrollbar {
     padding: 20px;
     font-size: 1.75em;
     transition: transform 0.3s ease;
+}
+
+.faq-icon:hover {
+    cursor: pointer;
 }
 
 /* FAQ form styles */
