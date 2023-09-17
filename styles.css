@@ -450,8 +450,9 @@ body.faq::-webkit-scrollbar {
     text-decoration: underline;
 }
 
-/* Privacy styles*/
-body.privacy {
+/* Privacy and Terms page styles*/
+body.privacy,
+body.terms {
     background-color: rgb(12, 31, 84);
     color: white;
     font-family: 'Muli', sans-serif;
@@ -465,23 +466,27 @@ body.privacy {
     margin: 0;
 }
 
-body.privacy::-webkit-scrollbar {
+body.privacy::-webkit-scrollbar,
+body.terms::-webkit-scrollbar {
     display: none;
 }
 
-.privacy header .content-wrapper {
+.privacy header .content-wrapper,
+.terms header .content-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
     padding-bottom: 10px;
 }
 
-.privacy header figure {
+.privacy header figure,
+.terms header figure {
     width: 30%;
     margin: 20px 5px 0;
 }
 
-.privacy header h2 {
+.privacy header h2,
+.terms header h2 {
     font-size: 1.50rem;
     margin: 0;
 }
@@ -512,7 +517,8 @@ nav {
     border: 2px solid lightblue;
 }
 
-main.privacy .content-wrapper {
+main.privacy .content-wrapper,
+main.terms .content-wrapper {
     background-color: #fff;
 }
 
@@ -530,16 +536,20 @@ main.privacy .content-wrapper {
 
 .privacy-headline,
 .statement .content h4,
-.statement .content p {
+.statement .content p
+.terms-headline,
+.terms ol {
     color: #000;
     text-align: left;
 }
 
-.privacy-headline {
+.privacy-headline,
+.terms-headline {
     padding: 0 20px;
 }
 
-.statement .content h4 {
+.statement .content h4,
+.terms li span {
     text-decoration: underline;
 }
 
@@ -624,8 +634,9 @@ main.privacy .content-wrapper {
         margin: 0;
     }
 
-    /* Privacy Styles*/
-    main.privacy .content-wrapper {
+    /* Privacy and Terms Styles*/
+    main.privacy .content-wrapper,
+    main.terms .content-wrapper  {
         padding-top: 0;
         align-items: flex-start;
     }
@@ -667,15 +678,17 @@ main.privacy .content-wrapper {
         font-size: 1.25rem;
     }
 
-    /* Privacy styles*/
+    /* Privacy and Terms styles*/
     .privacy header .content-wrapper,
+    .terms header .content-wrapper,
     .statement .content-wrapper {
         max-width: 80%;
         margin: auto;
     }
 
     .home-link,
-    .privacy-headline {
+    .privacy-headline,
+    .terms-headline {
         padding-left: 30px;
     }
 
@@ -683,7 +696,8 @@ main.privacy .content-wrapper {
         padding: 0 30px 20px;
     }
 
-    .privacy footer .content-wrapper {
+    .privacy footer .content-wrapper,
+    .terms footer .content-wrapper {
         width: 75%;
     }
 
