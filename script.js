@@ -123,6 +123,8 @@ const closeButton = document.querySelector(".close-btn");
 const bodyElement = document.body; //select the body element
 const privacyPage = document.querySelector("main.privacy .content-wrapper");
 const privacyContent = document.getElementById("privacy-content");
+const termsPage = document.querySelector("main.terms .content-wrapper");
+const termsContent = document.getElementById("terms-content");
 
 
 disclaimerLink.addEventListener("click", function(event) {
@@ -133,6 +135,9 @@ disclaimerLink.addEventListener("click", function(event) {
     if (bodyElement.classList.contains("privacy")) {
         privacyContent.style.backgroundColor = "rgba(10, 35, 81, 0.5)";
         privacyPage.style.backgroundColor = "rgba(10, 35, 81, 0.5)";
+    } else if (bodyElement.classList.contains("terms")) {
+        termsContent.style.background = "rgba(10, 35, 81, 0.5)";
+        termsPage.style.backgroundColor = "rgba(10, 35, 81, 0.5)";
     }
     
 });
@@ -144,6 +149,9 @@ closeButton.addEventListener("click", function(event) {
     if (bodyElement.classList.contains("privacy")) {
         privacyContent.style.backgroundColor = "white";
         privacyPage.style.backgroundColor = "white";
+    } else if (bodyElement.classList.contains("terms")) {
+        termsContent.style.background = "white";
+        termsPage.style.backgroundColor = "white";
     }
     
 });
