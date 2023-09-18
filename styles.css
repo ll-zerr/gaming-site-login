@@ -520,6 +520,7 @@ nav {
 main.privacy .content-wrapper,
 main.terms .content-wrapper {
     background-color: #fff;
+    padding-bottom: 25px;
 }
 
 .home-link {
@@ -536,11 +537,14 @@ main.terms .content-wrapper {
 
 .privacy-headline,
 .statement .content h4,
-.statement .content p
-.terms-headline,
-.terms ol {
+.statement .content p,
+.terms-list {
     color: #000;
     text-align: left;
+}
+
+.terms-list {
+    margin-top: 0;
 }
 
 .privacy-headline,
@@ -550,6 +554,7 @@ main.terms .content-wrapper {
 
 .statement .content h4,
 .terms li span {
+    font-weight: bold;
     text-decoration: underline;
 }
 
@@ -557,6 +562,10 @@ main.terms .content-wrapper {
     padding: 0 20px;
     margin: 0;
     line-height: 1.4;
+}
+
+.term-item {
+    padding: 20px 0;
 }
 
 #login-btn {
