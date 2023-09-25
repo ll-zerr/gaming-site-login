@@ -253,6 +253,7 @@ footer .content-wrapper {
     font-weight: bold;
 }
 
+/* Disclaimer Styles */
 .disclaimer-box {
     background-color: #fff;
     border-radius: 10px;
@@ -291,6 +292,54 @@ footer .content-wrapper {
 
 .show {
     display: block;
+}
+
+.cookies-box {
+    background-color: #fff;
+    border-radius: 10px;
+    color: #000;
+    /* display: none; */
+    position: absolute;
+    inset: 0;
+    margin: 220px auto;
+    width: 90%;
+    height: 70vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth; 
+}
+
+.section-headline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle {
+    visibility: hidden;
+}
+
+.label {
+    display: inline-block;
+    background-color: gray;
+    width: 60px;
+    height: 28px;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+}
+
+.toggle:checked + .label {
+    background-color: blue;
+}
+
+.ball {
+    background-color: white;
+    width: 26px;
+    height: 26px;
+    border-radius: 50px;
+    position: absolute;
+    top: 1.25px;
+    left: 1.5px;
 }
 /***************** FAQ page styles **********************/
 body.faq {
