@@ -253,7 +253,7 @@ footer .content-wrapper {
     font-weight: bold;
 }
 
-/* Disclaimer Styles */
+/* Disclaimer and Cookies Styles */
 .disclaimer-box {
     background-color: #fff;
     border-radius: 10px;
@@ -314,6 +314,7 @@ footer .content-wrapper {
     align-items: center;
 }
 
+/*** Cookies slider button ***/
 .toggle {
     visibility: hidden;
 }
@@ -329,7 +330,7 @@ footer .content-wrapper {
 }
 
 .toggle:checked + .label {
-    background-color: blue;
+    background-color: rgb(77, 74, 238);
 }
 
 .ball {
@@ -340,7 +341,41 @@ footer .content-wrapper {
     position: absolute;
     top: 1.25px;
     left: 1.5px;
+    animation: slideOff 0.3s linear forwards;
 }
+
+.toggle:checked + .label .ball {
+    animation: slideOn 0.3s linear forwards;
+}
+
+@keyframes slideOn {
+    0% {
+        transform: translateX(0) scale(1);
+    }
+
+    50% {
+        transform: translateX(20px) scale(1);
+    }
+
+    100% {
+        transform: translateX(30px) scale(1);
+    }
+}
+
+@keyframes slideOff {
+    0% {
+        transform: translateX(30px) scale(1);
+    }
+
+    50% {
+        transform: translateX(20px) scale(1.2);
+    }
+
+    100% {
+        transform: translateX(0) scale(1);
+    }
+}
+
 /***************** FAQ page styles **********************/
 body.faq {
     background-color: rgb(12, 31, 84);
@@ -499,7 +534,7 @@ body.faq::-webkit-scrollbar {
     text-decoration: underline;
 }
 
-/* Privacy and Terms page styles*/
+/***************** Privacy and Terms page styles **********************/
 body.privacy,
 body.terms {
     background-color: rgb(12, 31, 84);
