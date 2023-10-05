@@ -116,6 +116,24 @@ languageLinks.forEach(link => {
 // setLanguage("en");
 animateLabels();
 
+document.querySelectorAll('.faq-content p').forEach(p => {
+    p.style.display = 'none';
+});
+
+// enable view of answers on the FAQ page
+const faqIcons = document.querySelectorAll(".faq-icon");
+
+faqIcons.forEach(icon => {
+    icon.addEventListener("click", function() {
+        const questionDiv = this.parentElement;
+        const answerPara = questionDiv.nextElementSibling;
+        // toggle the visibility of the answer paragraph
+        answerPara.style.display = answerPara.style.display === 'none' ? 'block' : 'none';
+        // rotate the icon 45 degrees if the answer is visible, or reset it if not
+        this.style.transform = answerPara.style.display === 'none' ? 'rotate(0deg)' : 'rotate(45deg)';
+    });
+});
+
 // Show or hide disclaimer or cookie preferences box
 const bodyElement = document.body; //select the body element
 const privacyPage = document.querySelector("main.privacy .content-wrapper");
@@ -159,20 +177,4 @@ function setupPopup(linkSelector, boxSelector, closeSelector) {
 setupPopup(".link-item.disclaimer a", ".disclaimer-box", ".disclaimer-close-btn");
 setupPopup(".link-item.cookies a", ".cookies-box", ".cookies-close-btn");
 
-document.querySelectorAll('.faq-content p').forEach(p => {
-    p.style.display = 'none';
-});
 
-// enable view of answers on the FAQ page
-const faqIcons = document.querySelectorAll(".faq-icon");
-
-faqIcons.forEach(icon => {
-    icon.addEventListener("click", function() {
-        const questionDiv = this.parentElement;
-        const answerPara = questionDiv.nextElementSibling;
-        // toggle the visibility of the answer paragraph
-        answerPara.style.display = answerPara.style.display === 'none' ? 'block' : 'none';
-        // rotate the icon 45 degrees if the answer is visible, or reset it if not
-        this.style.transform = answerPara.style.display === 'none' ? 'rotate(0deg)' : 'rotate(45deg)';
-    });
-});
