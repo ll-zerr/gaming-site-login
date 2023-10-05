@@ -116,45 +116,48 @@ languageLinks.forEach(link => {
 // setLanguage("en");
 animateLabels();
 
-// Show or hide disclaimer pop-up box
-const disclaimerLink = document.querySelector(".link-item.disclaimer a");
-const disclaimerBox = document.querySelector(".disclaimer-box");
-const closeButton = document.querySelector(".close-btn");
+// Show or hide disclaimer or cookie preferences box
 const bodyElement = document.body; //select the body element
 const privacyPage = document.querySelector("main.privacy .content-wrapper");
 const privacyContent = document.getElementById("privacy-content");
 const termsPage = document.querySelector("main.terms .content-wrapper");
 const termsContent = document.getElementById("terms-content");
 
+function setupPopup(linkSelector, boxSelector, closeSelector) {
+    const chosenLink = document.querySelector(linkSelector);
+    const chosenBox = document.querySelector(boxSelector);
+    const closeButton = document.querySelector(closeSelector)
 
-disclaimerLink.addEventListener("click", function(event) {
-    event.preventDefault();
-    disclaimerBox.classList.add("show");
-    window.scrollTo({top:0, left:0, behavior: 'smooth'});
-
-    if (bodyElement.classList.contains("privacy")) {
-        privacyContent.style.backgroundColor = "rgba(10, 35, 81, 0.5)";
-        privacyPage.style.backgroundColor = "rgba(10, 35, 81, 0.5)";
-    } else if (bodyElement.classList.contains("terms")) {
-        termsContent.style.background = "rgba(10, 35, 81, 0.5)";
-        termsPage.style.backgroundColor = "rgba(10, 35, 81, 0.5)";
-    }
+    chosenLink.addEventListener("click", function(event) {
+        event.preventDefault();
+        chosenBox.classList.add("show");
+        window.scrollTo({top:0, left:0, behavior: 'smooth'});
     
-});
+        if (bodyElement.classList.contains("privacy")) {
+            privacyContent.style.backgroundColor = "rgba(10, 35, 81, 0.5)";
+            privacyPage.style.backgroundColor = "rgba(10, 35, 81, 0.5)";
+        } else if (bodyElement.classList.contains("terms")) {
+            termsContent.style.background = "rgba(10, 35, 81, 0.5)";
+            termsPage.style.backgroundColor = "rgba(10, 35, 81, 0.5)";
+        }
+    });
 
-closeButton.addEventListener("click", function(event) {
-    event.stopPropagation(); // prevent the click event from bubbling up to the disclaimer box
-    disclaimerBox.classList.remove("show");
-
-    if (bodyElement.classList.contains("privacy")) {
-        privacyContent.style.backgroundColor = "white";
-        privacyPage.style.backgroundColor = "white";
-    } else if (bodyElement.classList.contains("terms")) {
-        termsContent.style.background = "white";
-        termsPage.style.backgroundColor = "white";
-    }
+    closeButton.addEventListener("click", function(event) {
+        event.stopPropagation(); // prevent the click event from bubbling up to the parent box
+        chosenBox.classList.remove("show");
     
-});
+        if (bodyElement.classList.contains("privacy")) {
+            privacyContent.style.backgroundColor = "white";
+            privacyPage.style.backgroundColor = "white";
+        } else if (bodyElement.classList.contains("terms")) {
+            termsContent.style.background = "white";
+            termsPage.style.backgroundColor = "white";
+        }
+    });
+}
+
+setupPopup(".link-item.disclaimer a", ".disclaimer-box", ".disclaimer-close-btn");
+setupPopup(".link-item.cookies a", ".cookies-box", ".cookies-close-btn");
 
 document.querySelectorAll('.faq-content p').forEach(p => {
     p.style.display = 'none';

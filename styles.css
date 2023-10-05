@@ -277,7 +277,8 @@ footer .content-wrapper {
     width: 90%;
 }
 
-.close-btn {
+.disclaimer-close-btn,
+.cookies-close-btn {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -290,15 +291,15 @@ footer .content-wrapper {
     cursor: pointer;
 }
 
-.show {
+/* .show {
     display: block;
-}
+} */
 
 .cookies-box {
     background-color: #fff;
     border-radius: 10px;
     color: #000;
-    /* display: none; */
+    display: none;
     position: absolute;
     inset: 0;
     margin: 220px auto;
@@ -401,6 +402,10 @@ footer .content-wrapper {
     100% {
         transform: translateX(0) scale(1);
     }
+}
+
+.show {
+    display: block;
 }
 
 /***************** FAQ page styles **********************/
