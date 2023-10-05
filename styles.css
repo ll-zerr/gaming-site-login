@@ -308,10 +308,37 @@ footer .content-wrapper {
     scroll-behavior: smooth; 
 }
 
+.cookies-box h3 {
+    margin-top: 40px;
+}
+
+.cookie-pref-section {
+    margin: 20px 0;
+}
+
 .section-headline {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.section-headline h4 {
+    padding: 0;
+}
+
+.cookie-selection {
+    background-color: #2151c1;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 30px;
+    margin: 20px 0;
+}
+
+.cookie-selection:hover {
+    filter: drop-shadow(5px 10px 6px rgb(158, 157, 157));
+    transition: transform 0.2s; 
 }
 
 /*** Cookies slider button ***/
