@@ -177,4 +177,25 @@ function setupPopup(linkSelector, boxSelector, closeSelector) {
 setupPopup(".link-item.disclaimer a", ".disclaimer-box", ".disclaimer-close-btn");
 setupPopup(".link-item.cookies a", ".cookies-box", ".cookies-close-btn");
 
+// select cookie preferences for each section with the option
+const toggles = document.querySelectorAll(".toggle");
 
+toggles.forEach(toggle => {
+    toggle.addEventListener("change", function() {
+        const label = this.nextElementSibling;
+        console.log(label);
+        const ball = label.querySelector(".ball");
+        
+        if (this.checked) {
+            label.classList.add("on");
+            label.classList.remove("off");
+            ball.classList.add("slideOn");
+            ball.classList.remove("slideOff");
+        } else {
+            label.classList.add("off");
+            label.classList.remove("on");
+            ball.classList.add("slideOff");
+            ball.classList.remove("slideOn");
+        }
+    });
+});
