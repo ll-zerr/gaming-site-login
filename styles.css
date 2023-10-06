@@ -724,7 +724,8 @@ main.terms .content-wrapper {
         flex-basis: 33%;
     }
 
-    .disclaimer-box {
+    .disclaimer-box,
+    .cookies-box {
         height: 80vh;
         margin-top: 150px;
         width: 70%;
@@ -758,7 +759,8 @@ main.terms .content-wrapper {
         font-size: 0.90rem;
     }
 
-    .disclaimer-box {
+    .disclaimer-box,
+    .cookies-box {
         width: 60%;
     }
 
