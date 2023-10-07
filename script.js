@@ -183,7 +183,6 @@ const toggles = document.querySelectorAll(".toggle");
 toggles.forEach(toggle => {
     toggle.addEventListener("change", function() {
         const label = this.nextElementSibling;
-        console.log(label);
         const ball = label.querySelector(".ball");
         
         if (this.checked) {
