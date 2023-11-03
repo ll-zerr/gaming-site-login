@@ -198,3 +198,11 @@ toggles.forEach(toggle => {
         }
     });
 });
+
+// loop of slides for product images on shop page
+const image = document.getElementById('product_img');
+const images = ['images/hoodie-heathergrey.png', 'images/yth_hoodie-navy.png', 'images/tshirt-red.png', 'images/stickers.png']
+setInterval(function(){
+    let random = Math.floor(Math.random() * 4);
+    image.src = images[random];
+}, 1800)

@@ -669,6 +669,13 @@ main.terms .content-wrapper {
     background-color: #2151c1;
 }
 
+/****************  Shop page styles **********************/
+.item {
+    width: 300px;
+    border-radius: 0;
+    transition: 0.3s;
+}
+
 @media only screen and (max-width:350px) {
     /* FAQ styles */
     h4 {
