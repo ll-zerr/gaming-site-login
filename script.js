@@ -202,7 +202,39 @@ toggles.forEach(toggle => {
 // loop of slides for product images on shop page
 const image = document.getElementById('product_img');
 const images = ['images/hoodie-heathergrey.png', 'images/yth_hoodie-navy.png', 'images/tshirt-red.png', 'images/stickers.png']
-setInterval(function(){
-    let random = Math.floor(Math.random() * 4);
-    image.src = images[random];
-}, 1800)
+let currentImageIndex = 0;
+
+function fadeIn(element) {
+    let op =0.1;
+    let timer = setInterval(function () {
+        if (op >=1) {
+            clearInterval(timer);
+        }
+        element.style.opacity = op;
+        op +=0.1;
+    }, 50);
+}
+
+function fadeOutAndCallback(image, callback) {
+    let opacity = 1;
+    let timer = setInterval(function() {
+        if(opacity < 0.1) {
+            clearInterval(timer);
+            callback();
+        }
+        image.style.opacity = opacity;
+        opacity -=0.1;
+    }, 100);
+}
+
+function changeImage() {
+    fadeOutAndCallback(image, function() {
+        image.src = images[currentImageIndex];
+        fadeIn(image);
+        // Move to the next image in the array, reset to the first image if at the end of the array
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+    });
+}
+
+changeImage(); // Initially load the first image
+setInterval(changeImage, 4500);
