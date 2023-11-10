@@ -685,7 +685,7 @@ main.terms .content-wrapper {
     margin: 50px auto;
   }
   
-  .outer-clock-face {
+.outer-clock-face {
     position: relative;
     background: #282828;
     overflow: hidden;
@@ -694,15 +694,15 @@ main.terms .content-wrapper {
     border-radius: 100%;
   }
   
-  .outer-clock-face::after {
+.outer-clock-face::after {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
-    transfrom: rotate(90deg);
+    transform: rotate(90deg);
   }
   
-  .outer-clock-face::after,
-  .outer-clock-face::before,
-  .outer-clock-face .marking {
+.outer-clock-face::after,
+.outer-clock-face::before,
+.outer-clock-face .marking {
     content: '';
     position: absolute;
     width: 5px;
@@ -712,36 +712,36 @@ main.terms .content-wrapper {
     left: 49%;
   }
   
-  .outer-clock-face .marking {
+.outer-clock-face .marking {
     background: #bdbdcb;
     width: 3px;
   }
   
-  .outer-clock-face .marking.marking-one {
+.outer-clock-face .marking.marking-one {
     -webkit-transform: rotate(30deg);
     -moz-transform: rotate(30deg);
     transform: rotate(30deg);
   }
   
-  .outer-clock-face .marking.marking-two {
+.outer-clock-face .marking.marking-two {
     -webkit-transform: rotate(60deg);
     -moz-transform: rotate(60deg);
     transform: rotate(60deg);
   }
   
-  .outer-clock-face .marking.marking-three {
+.outer-clock-face .marking.marking-three {
     -webkit-transform: rotate(120deg);
     -moz-transform: rotate(120deg);
     transform: rotate(120deg);
   }
   
-  .outer-clock-face .marking.marking-four {
+.outer-clock-face .marking.marking-four {
     -webkit-transform: rotate(150deg);
     -moz-transform: rotate(150deg);
     transform: rotate(150deg);
   }
   
-  .inner-clock-face {
+.inner-clock-face {
     position: absolute;
     top: 10%;
     left: 10%;
@@ -754,7 +754,7 @@ main.terms .content-wrapper {
     z-index: 1;
   }
   
-  .inner-clock-face::before {
+.inner-clock-face::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -768,7 +768,7 @@ main.terms .content-wrapper {
     z-index: 11;
   }
   
-  .hand {
+.hand {
     width: 50%;
     right: 50%;
     height: 6px;
@@ -781,18 +781,18 @@ main.terms .content-wrapper {
     transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
   }
   
-  .hand.hour-hand {
+.hand.hour-hand {
     width: 25%;
     z-index: 3;
   }
   
-  .hand.min-hand {
+.hand.min-hand {
     height: 3px;
     z-index: 10;
     width: 30%;
   }
   
-  .hand.second-hand {
+.hand.second-hand {
     background: #ee791a;
     width: 35%;
     height: 2px;
