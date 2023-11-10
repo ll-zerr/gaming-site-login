@@ -238,3 +238,29 @@ function changeImage() {
 
 changeImage(); // Initially load the first image
 setInterval(changeImage, 4500);
+
+// Analogue clock for counter
+const secondHand = document.querySelector('.second-hand');
+const minsHand = document.querySelector('.min-hand');
+const hourHand = document.querySelector('.hour-hand');
+
+// Grab the date to get hours, minutes, seconds
+function setDate() {
+  const now = new Date();
+  
+  const seconds = now.getSeconds();
+  const secondsDegrees = ((seconds / 60) * 360) + 90; // stores how second hand will rotate, divide by 60 for 60 seconds in a minute and multiply by 360 for 360 degrees in a circle 
+  secondHand.style.transform = `rotate(${secondsDegrees}deg)`; // this rotates the hand
+  
+  const mins = now.getMinutes();
+  const minsDegrees = ((mins / 60) * 360) + ((seconds/60)*6) + 90; // divide by 60 because 1 hour is equal to 60 minutes and add the second hand position with minutes because the minute's hand is in the right place depending on the second
+  minsHand.style.transform = `rotate(${minsDegrees}deg)`;
+  
+  const hour = now.getHours();
+  const hourDegrees = ((hour / 12) * 360) + ((mins/60)*30) + 90;
+  hourHand.style.transform = `rotate(${hourDegrees}deg)`;
+}
+
+setInterval(setDate, 1000); //need to call this rotate function every 1 second or 1000 milliseconds
+
+setDate();
