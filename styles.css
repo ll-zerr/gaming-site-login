@@ -18,7 +18,8 @@ html {
     font-size: 16px;
 }
 
-body.home {
+body.home,
+body.shop {
     background-color: rgb(12, 31, 84);
     color: white;
     font-family: 'Muli', sans-serif;
@@ -771,8 +772,8 @@ main.terms .content-wrapper {
 .hand {
     width: 50%;
     right: 50%;
-    height: 6px;
-    background: #61afff;
+    height: 2.5px;
+    background: #a19f9f;
     position: absolute;
     top: 50%;
     border-radius: 6px;
@@ -782,25 +783,37 @@ main.terms .content-wrapper {
   }
   
 .hand.hour-hand {
-    width: 25%;
+    width: 20%;
     z-index: 3;
   }
   
 .hand.min-hand {
-    height: 3px;
+    height: 2px;
     z-index: 10;
-    width: 30%;
+    width: 25%;
   }
   
 .hand.second-hand {
-    background: #ee791a;
-    width: 35%;
-    height: 2px;
+    background: #ef4e4e;
+    width: 30%;
+    height: 1.5px;
     z-index: 9;
   }
+
+ .announcement {
+    color:#fff;
+    font-size: 2.90rem;
+    position: absolute;
+    top: 16%;
+    left: 1%;
+    z-index: 12;
+    text-align: center;
+    text-shadow: 3px 2px #9c9b98;
+ } 
+
 .item {
     width: 300px;
-    border-radius: 0;
+    border-radius: 10%;
     transition: 0.3s;
 }
 
@@ -882,6 +895,28 @@ main.terms .content-wrapper {
         padding-top: 0;
         align-items: flex-start;
     }
+
+    /* Shop styles*/
+    body.shop {
+        background-image: linear-gradient(0deg, rgba(86, 88, 94, 0.356), rgba(61, 61, 119, 0.486)), url(shop/images/bkgnd_shop.jpg); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    main.shop .content-wrapper {
+        /* flex-direction: row; */
+        /* justify-content: space-around; */
+        min-height: 700px;
+    }
+
+    .clock {
+        margin: 0;
+    }
+
+    .shop-items {
+        display: none;
+    }
 }
 
 @media only screen and (min-width:1000px) {
@@ -942,6 +977,13 @@ main.terms .content-wrapper {
     .privacy footer .content-wrapper,
     .terms footer .content-wrapper {
         width: 75%;
+    }
+
+    /* Shop styles */
+    .clock {
+        position: absolute;
+        top: 5%;
+        right: 8%;
     }
 
 }
