@@ -201,7 +201,7 @@ toggles.forEach(toggle => {
 
 // loop of slides for product images on shop page
 const image = document.getElementById('product_img');
-const images = ['images/hoodie-heathergrey.png', 'images/yth_hoodie-navy.png', 'images/tshirt-red.png', 'images/stickers.png']
+const images = ['images/hoodie-heathergrey_c1.png', 'images/youth_hoodie-charcoal-copy.png', 'images/tshirt-red-copy.png', 'images/stickers_ggn-copy.png']
 let currentImageIndex = 0;
 
 function fadeIn(element) {
