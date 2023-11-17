@@ -239,21 +239,50 @@ function changeImage() {
 changeImage(); // Initially load the first image
 setInterval(changeImage, 4500);
 
+// Event listener for product preview
+const productPreviewBtn = document.querySelector('.product-preview')
+const slideshow = document.querySelector('.slideshow');
+const slideCloseBtn = document.querySelector(".slideshow-close-btn");
+
+productPreviewBtn.addEventListener('click', function() {
+    slideshow.style.display = "block";
+    slideCloseBtn.style.visibility = "visible";
+    productPreviewBtn.style.display = "none";
+
+    slideCloseBtn.addEventListener('click', function() {
+        slideshow.style.display = "none";
+        slideCloseBtn.style.visibility = "hidden";
+        productPreviewBtn.style.display = "flex";
+    })
+
+    const mediaQuery = window.matchMedia('(max-width: 499px)');  // Add a listener for the media query
+    mediaQuery.addEventListener('change', function(e) {
+        if (e.matches) {
+            slideshow.style.display = "block";
+            productPreviewBtn.style.display = "none";
+        } else {
+            slideshow.style.display = "none";
+            productPreviewBtn.style.display = "flex";
+        }   
+    })
+})
+
+
 // Analogue clock for counter
 const secondHand = document.querySelector('.second-hand');
 const minsHand = document.querySelector('.min-hand');
 const hourHand = document.querySelector('.hour-hand');
 
-// Grab the date to get hours, minutes, seconds
-function setDate() {
+
+function setDate() {      // Grab the date to get hours, minutes, seconds
   const now = new Date();
   
   const seconds = now.getSeconds();
-  const secondsDegrees = ((seconds / 60) * 360) + 90; // stores how second hand will rotate, divide by 60 for 60 seconds in a minute and multiply by 360 for 360 degrees in a circle 
-  secondHand.style.transform = `rotate(${secondsDegrees}deg)`; // this rotates the hand
+  const secondsDegrees = ((seconds / 60) * 360) + 90;  
+  secondHand.style.transform = `rotate(${secondsDegrees}deg)`; 
   
   const mins = now.getMinutes();
-  const minsDegrees = ((mins / 60) * 360) + ((seconds/60)*6) + 90; // divide by 60 because 1 hour is equal to 60 minutes and add the second hand position with minutes because the minute's hand is in the right place depending on the second
+  const minsDegrees = ((mins / 60) * 360) + ((seconds/60)*6) + 90; 
   minsHand.style.transform = `rotate(${minsDegrees}deg)`;
   
   const hour = now.getHours();
@@ -261,6 +290,5 @@ function setDate() {
   hourHand.style.transform = `rotate(${hourDegrees}deg)`;
 }
 
-setInterval(setDate, 1000); //need to call this rotate function every 1 second or 1000 milliseconds
-
+setInterval(setDate, 1000); 
 setDate();
