@@ -259,6 +259,7 @@ productPreviewBtn.addEventListener('click', function() {
     mediaQuery.addEventListener('change', function(e) {
         if (e.matches) {
             slideshow.style.display = "block";
+            slideCloseBtn.style.visibility = "hidden";
             productPreviewBtn.style.display = "none";
         } else {
             slideshow.style.display = "none";
@@ -266,7 +267,6 @@ productPreviewBtn.addEventListener('click', function() {
         }   
     })
 })
-
 
 // Analogue clock for counter
 const secondHand = document.querySelector('.second-hand');
