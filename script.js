@@ -292,3 +292,20 @@ function setDate() {      // Grab the date to get hours, minutes, seconds
 
 setInterval(setDate, 1000); 
 setDate();
+
+// Event listener for shop page subscription
+const checkBox = document.getElementById('toggle');
+const subscribe = document.querySelector(".sub");
+const thanks = document.querySelector('.thanks');
+
+checkBox.addEventListener("click", function() {
+    let isChecked = checkBox.checked;
+    console.log(isChecked);
+    if (isChecked === true) {
+        subscribe.style.opacity = "0";
+        thanks.style.opacity = "1";
+    } else if (isChecked === false) {
+        subscribe.style.opacity = "1";
+        thanks.style.opacity = "0";
+    }
+});

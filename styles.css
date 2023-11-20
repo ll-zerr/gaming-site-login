@@ -862,8 +862,6 @@ main.terms .content-wrapper {
 
 .product-preview {
     display: none;
-    /* font-size: 2.25rem; */
-    /* margin-left: 30px; */
     position: absolute;
     top: 32%;
     right: 10%;
@@ -936,7 +934,6 @@ main.terms .content-wrapper {
 .product-preview .shop-message {
     color: #fff;
     font-size: 1.1em;
-    /* text-transform: uppercase; */
     letter-spacing: 0.1em;
     transform: scale(0);
     transition: 0.5s;
@@ -947,19 +944,21 @@ main.terms .content-wrapper {
     transform: scale(1);
     transition-delay: 0.25s;
 }
+
 /**** Subscribe section ****/
 .subscribe .content-wrapper p {
     text-align: center;
+    font-size: 1.0625rem;
 }
 
 .form {
     display: flex;
     flex-direction: column;
-    /* width: 60%; */
 }
 
 .form-btn-text {
     font-size: 1.0625rem;
+    padding: 4px;
 }
 
 .wrap {
@@ -978,13 +977,11 @@ main.terms .content-wrapper {
 
 .parent {
     position: relative;
-    /* padding-left: 5px; */
 }
 
 .parent .sub {
     transition: all 0.5s ease-in-out;
     padding: 5px;
-    background-color: rgba(158, 193, 233, 0.404);
     border-radius: 5px;
 }
 
@@ -995,15 +992,18 @@ main.terms .content-wrapper {
     top: -5px;
     left: 0;
     opacity: 0;
+    margin-top: 5px;
 }
 
 .subscription-text {
     font-size: 1.0625rem;
     color: #f5f5f5;
     font-family: 'Muli', sans-serif;
+    font-weight: 600;
     letter-spacing: 2px;
     margin-left: 10px;
     text-transform: uppercase;
+    text-shadow: 2px 3px 2px #3661c5;
     transition: all 0.5s ease-in-out;
 }
 
@@ -1047,20 +1047,11 @@ main.terms .content-wrapper {
     background: rgba(12, 31, 84);    
 }
 
-/* #toggle:checked ~ .nav {
-    opacity: 1;
-    transform: translateY(10%);
-} */
-
-#toggle:checked ~ .button {
+#toggle:checked ~ .sub-button {
     transform: rotate(135deg);
     box-shadow: 0 0 0 0 transparent;
     border-radius: 100%;
 }
-
-/* #toggle:checked ~ .subbed {
-    opacity: 1;
-} */
 
 @media only screen and (max-width:350px) {
     /* FAQ styles */
@@ -1151,7 +1142,8 @@ main.terms .content-wrapper {
 
     main.shop .content-wrapper {
         min-height: 700px;
-        justify-content: flex-start;
+        /* justify-content: flex-start; */
+        justify-content: space-between;
         align-items: end;
     }
 
@@ -1173,6 +1165,21 @@ main.terms .content-wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    #subscribe-aside .content-wrapper {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .form {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .subscription-email {
+        margin-right: 15px;
     }
 }
 
@@ -1216,7 +1223,8 @@ main.terms .content-wrapper {
         font-size: 2.25em;
     }
 
-    p, .faq-form .btn {
+    p, .faq-form .btn,
+    .subscribe .content-wrapper p {
         font-size: 1.25rem;
     }
 
