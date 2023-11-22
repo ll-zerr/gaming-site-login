@@ -951,6 +951,13 @@ main.terms .content-wrapper {
     font-size: 1.0625rem;
 }
 
+.subscription-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .form {
     display: flex;
     flex-direction: column;
@@ -1053,6 +1060,10 @@ main.terms .content-wrapper {
     border-radius: 100%;
 }
 
+#subscribe-aside .content-wrapper {
+    padding-top: 50px;
+}
+
 @media only screen and (max-width:350px) {
     /* FAQ styles */
     h4 {
@@ -1144,7 +1155,7 @@ main.terms .content-wrapper {
         min-height: 700px;
         /* justify-content: flex-start; */
         justify-content: space-between;
-        align-items: end;
+        /* align-items: end; */
     }
 
     .clock {
@@ -1152,6 +1163,7 @@ main.terms .content-wrapper {
     }
 
     .slideshow {
+        align-self: flex-end;
         display: none;
         width: 230px;
         margin-top: 70px;
@@ -1171,6 +1183,13 @@ main.terms .content-wrapper {
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        padding-bottom: 0;
+    }
+
+    .subscription-box {
+        /* background-color: rgba(230, 224, 224, 0.3); */
+        backdrop-filter: blur(10px);
+        padding: 0 5px 10px;
     }
 
     .form {
@@ -1266,6 +1285,7 @@ main.terms .content-wrapper {
     .slideshow {
         width: 300px;
         margin-right: 30px;
+        margin-top: 250px;
     }
 
     .shop-headline {
