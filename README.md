@@ -38,6 +38,12 @@ The goal of the initial project was to create a login form that displays wave an
 - Fix the issue with the footer links that arose when coding for language translation.
 - Create a CSS custom variable for the borders, text, and icons in the footer.
 - Add additional pages and popups for specific footer links.
+    * FAQ page has been added.
+    * Disclaimer popup is now included.
+    * Privacy page has been added.
+    * Terms of Use page has been added.
+    * Cookie Preferences popup is now included.
+    * Shop - Coming Soon page has been added.
 - Test for responsiveness and address any errors that come up. (Repeat as needed.)
 - Validate HTML and CSS code. (Repeat as needed.)
 
