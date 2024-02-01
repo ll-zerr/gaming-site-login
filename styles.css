@@ -1070,7 +1070,7 @@ main.terms .content-wrapper {
 .register-form-container {
     /* color: #000; */
     position: relative;
-    max-width: 430px;
+    max-width: 500px;
     width: 100%;
     background: #fff;
     padding: 34px;
@@ -1095,10 +1095,6 @@ main.terms .content-wrapper {
     border-radius: 12px;
     background: #4070f4;
 }
-
-/* .reg-form {
-    margin-top: 30px;
-} */
 
 .reg-form .input-box {
     height: 52px;
@@ -1131,7 +1127,7 @@ main.terms .content-wrapper {
 
 .reg-form h4 {
     color: #707070;
-    /* font-size: 14px; */
+    font-size: 1rem;
     font-weight: 500;
     /* margin-left: 10px; */
 }
@@ -1395,6 +1391,11 @@ main.terms .content-wrapper {
     .product-preview {
         top: 52%;
         right: 7%;
+    }
+
+    /* Registration styles*/
+    .reg-form h4 {
+        font-size: 1.125rem;
     }
 
 }
