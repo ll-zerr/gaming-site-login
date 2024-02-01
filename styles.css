@@ -22,7 +22,8 @@ html {
 }
 
 body.home,
-body.shop {
+body.shop,
+body.register {
     background-color: rgb(12, 31, 84);
     color: white;
     font-family: 'Muli', sans-serif;
@@ -1064,6 +1065,60 @@ main.terms .content-wrapper {
     padding-top: 50px;
 }
 
+/****************  Registration page styles **********************/
+
+.register-form-container {
+    /* color: #000; */
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    padding: 34px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.reg-headline {
+    color: #333;
+    position: relative;
+    /* font-size: 22px; */
+    /* font-weight: 600; */
+}
+
+.reg-headline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 28px;
+    border-radius: 12px;
+    background: #4070f4;
+}
+
+/* .reg-form {
+    margin-top: 30px;
+} */
+
+.reg-form .input-box {
+    height: 52px;
+    margin: 18px 0;
+}
+
+.reg-form .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+    border: 1.5px solid #c7bebe;
+    border-bottom-width: 2.5px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
 @media only screen and (max-width:350px) {
     /* FAQ styles */
     h4 {
@@ -1078,7 +1133,8 @@ main.terms .content-wrapper {
 
 @media only screen and (min-width:500px) {
     /* General Styles */
-    body.home {
+    body.home,
+    body.register {
         background-image: linear-gradient(0deg, rgba(86, 88, 94, 0.356), rgba(61, 61, 119, 0.486)), url(https://images.pexels.com/photos/7871540/pexels-photo-7871540.jpeg?auto=compress&cs=tinysrgb&w=600); 
         background-position: center;
         background-repeat: no-repeat;
