@@ -1119,6 +1119,50 @@ main.terms .content-wrapper {
     transition: all 0.3s ease;
 }
 
+.input-box input:focus,
+.input-box input:valid {
+    border-color: #4070f4;
+}
+
+.reg-form .policy {
+    display: flex;
+    align-items: center;
+}
+
+.reg-form h4 {
+    color: #707070;
+    /* font-size: 14px; */
+    font-weight: 500;
+    /* margin-left: 10px; */
+}
+
+.input-box.button input {
+    color: #fff;
+    letter-spacing: 1px;
+    border: none;
+    background: #476af4ee;
+    cursor: pointer;
+}
+
+.input-box.button input:hover {
+    background: #0e49e9;
+}
+
+.reg-form .text h4 {
+    color: #333;
+    width: 100%;
+    text-align: center;
+}
+
+.reg-form .text h4 a {
+    color: #4070f4;
+    text-decoration: none;
+}
+
+.reg-form .text h4 a:hover {
+    text-decoration: underline;
+}
+
 @media only screen and (max-width:350px) {
     /* FAQ styles */
     h4 {
