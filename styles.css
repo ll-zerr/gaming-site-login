@@ -1168,46 +1168,58 @@ main.terms .content-wrapper {
     text-decoration: underline;
 }
 
+/*** Password Strength Check ***/
 #popover-password {
     display: none;
   }
   
-  .progress-bar {
+.progress-bar {
     height: 3px !important;
   }
   
-  .show-pass {
+.show-pass {
     position: absolute;
     top: 42.5%;
     right: 10%;
   }
   
-  .progress-bar-danger {
+.progress-bar-danger {
     background-color: #e90f10;
   }
   
-  .progress-bar-warning {
+.progress-bar-warning {
     background-color: #ffad00;
   }
   
-  .progress-bar-success{
+.progress-bar-success{
     background-color: #02b502;
   }
   
-  .requires-list {
+.requires-list {
     list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 5px;
   }
+
+.req-item {
+    color: #333;
+}
   
-  .fa-eye {
+.fa-eye {
     color: #022255;
     cursor: pointer;
   }
   
-  .fa-circle {
-    font-size: 6px;
+.fa-circle {
+    font-size: 8px;
+    color: #333;
   }
   
-  .fa-check {
+.fa-check {
     color: #02b502;
   }
 
