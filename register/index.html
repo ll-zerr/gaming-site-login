@@ -34,10 +34,54 @@
             <input type="text" placeholder="Enter your email" required>
           </div>
           <div class="input-box">
-            <input type="password" placeholder="Create password" required>
+            <input id="pass-create" type="password" placeholder="Create password" required>
           </div>
+          <span class="show-pass" onclick="toggle()">
+            <i class="far fa-eye" onlick="myfunction(this)"></i>
+          </span>
+          
+          <div id="popover-password">
+            <p><span id="result"></span></p>
+            <div class="progress">
+              <div id="password-strength"
+                   class="progress-bar"
+                   role="progressbar"
+                   aria-valuenow="40"
+                   aira-valuemin="0"
+                   aria-valuemax="100"
+                   style="width:0%">
+              </div>
+            </div>
+            <ul class="requires-list">
+              <li class="req-item">
+                <span class="low-upp-case">
+                  <i class="fas fa-circle" aria-hidden="true"></i>
+                  &nbsp;Lowercase &amp; Uppercase
+                </span>
+              </li>
+              <li class="req-item">
+                <span class="one-number">
+                  <i class="fas fa-circle" aria-hidden="true"></i>
+                  &nbsp;Number (0-9)
+                </span>
+              </li>
+              <li class="req-item">
+                <span class="one-special-char">
+                  <i class="fas fa-circle" aria-hidden="true"></i>
+                  &nbsp;Special Character (!@#$%^&*)
+                </span>
+              </li>
+              <li class="req-item">
+                <span class="eight-character">
+                  <i class="fas fa-circle" aria-hidden="true"></i>
+                  &nbsp;At least 8 Characters
+                </span>
+              </li>
+            </ul>
+          </div>
+
           <div class="input-box">
-            <input type="password" placeholder="Confirm password" required>
+            <input id="pass-confirm" type="password" placeholder="Confirm password" required>
           </div>
           <div class="policy">
             <input type="checkbox">
