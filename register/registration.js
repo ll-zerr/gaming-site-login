@@ -34,6 +34,7 @@ function toggle() {
 
 function myFunction(show) {
   show.classList.toggle("fa-eye-slash");
+  show.classList.toggle("fa-eye");
 }
 
 function checkPasswordStrength(password) {

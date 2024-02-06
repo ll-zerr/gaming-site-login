@@ -1209,7 +1209,8 @@ main.terms .content-wrapper {
     color: #333;
 }
   
-.fa-eye {
+.fa-eye,
+.fa-eye-slash {
     color: #022255;
     cursor: pointer;
   }
