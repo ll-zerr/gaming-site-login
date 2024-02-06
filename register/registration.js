@@ -12,14 +12,12 @@ const passConfirm = document.getElementById("pass-confirm");
 
 password.addEventListener("keyup", function() {
   passCheck.style.display = "block";
-  showPass.style.top = "38%";
   let pass = document.getElementById("pass-create").value;
   checkPasswordStrength(pass);
 }); 
 
 passConfirm.addEventListener("input", function() {
   passCheck.style.display = "none";
-  showPass.style.top = "42.5%";
 })
 
 function toggle() {

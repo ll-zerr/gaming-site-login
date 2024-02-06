@@ -1176,11 +1176,17 @@ main.terms .content-wrapper {
 .progress-bar {
     height: 3px !important;
   }
+ 
   
+.password-wrap {
+    position: relative;
+}
+
 .show-pass {
     position: absolute;
-    top: 42.5%;
+    top: 45%;
     right: 10%;
+    transform: translateY(-45%);
   }
   
 .progress-bar-danger {
@@ -1208,7 +1214,7 @@ main.terms .content-wrapper {
 .req-item {
     color: #333;
 }
-  
+
 .fa-eye,
 .fa-eye-slash {
     color: #022255;
