@@ -44,6 +44,9 @@ The goal of the initial project was to create a login form that displays wave an
     * Terms of Use page has been added.
     * Cookie Preferences popup is now included.
     * Shop - Coming Soon page has been added.
+    * Registration page has been added with a form that:
+        * Checks password strength and updates a visual indicator of the password strength and any remaining requirements.
+        * Toggles the visibility of the password.
 - Test for responsiveness and address any errors that come up. (Repeat as needed.)
 - Validate HTML and CSS code. (Repeat as needed.)
 
