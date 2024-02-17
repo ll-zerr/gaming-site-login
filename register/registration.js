@@ -9,6 +9,8 @@ const number = document.querySelector(".one-number i");
 const specialChar = document.querySelector(".one-special-char i");
 const eightChar = document.querySelector(".eight-character i");
 const passConfirm = document.getElementById("pass-confirm");
+const wrongPass = document.getElementById("wrong-pass-alert");
+const regBtn = document.getElementById("reg-account");
 
 password.addEventListener("keyup", function() {
   passCheck.style.display = "block";
@@ -97,3 +99,18 @@ function checkPasswordStrength(password) {
   }
 }
 
+function validatePassword() {
+  let pass = password.value;
+  let confirm = passConfirm.value;
+  if (pass != confirm) {
+    wrongPass.style.color = "red";
+    wrongPass.innerHTML = "❌ Use same password";
+    regBtn.disabled = true;
+    regBtn.style.opacity = (0.4);
+  } else {
+    wrongPass.style.color = "green";
+    wrongPass.innerHTML = "✅ Password Matched";
+    regBtn.disabled = false;
+    regBtn.style.opacity = (1);
+  }
+}
