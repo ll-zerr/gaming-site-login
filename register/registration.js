@@ -24,10 +24,10 @@ passConfirm.addEventListener("input", function() {
 
 function toggle() {
   if (state){
-    document.getElementById("pass-create").setAttribute("type", "password");
+    password.setAttribute("type", "password");
     state = false;
   } else {
-    document.getElementById("pass-create").setAttribute("type", "text");
+    password.setAttribute("type", "text");
     state = true;
   }
 }
