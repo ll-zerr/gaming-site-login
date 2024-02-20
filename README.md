@@ -47,6 +47,7 @@ The goal of the initial project was to create a login form that displays wave an
     * Registration page has been added with a form that:
         * Checks password strength and updates a visual indicator of the password strength and any remaining requirements.
         * Toggles the visibility of the password.
+        * Provides a message indicating the status of the password confirmation.
 - Test for responsiveness and address any errors that come up. (Repeat as needed.)
 - Validate HTML and CSS code. (Repeat as needed.)
 
