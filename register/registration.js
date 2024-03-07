@@ -1,4 +1,3 @@
-// Create a check for password strength in registration form
 let state = false;
 const password = document.getElementById("pass-create");
 const passCheck = document.getElementById("popover-password")
@@ -12,6 +11,7 @@ const passConfirm = document.getElementById("pass-confirm");
 const wrongPass = document.getElementById("wrong-pass-alert");
 const regBtn = document.getElementById("reg-account");
 
+// Create a check for password strength in registration form
 password.addEventListener("keyup", function() {
   passCheck.style.display = "block";
   let pass = document.getElementById("pass-create").value;
@@ -99,6 +99,7 @@ function checkPasswordStrength(password) {
   }
 }
 
+// Create a check to confirm password
 function validatePassword() {
   let pass = password.value;
   let confirm = passConfirm.value;
@@ -114,3 +115,25 @@ function validatePassword() {
     regBtn.style.opacity = (1);
   }
 }
+
+// Check that all input fields on form have entries
+const regForm = document.querySelector(".reg-form")
+const regFormInputs = document.querySelectorAll('input[type="text"], input[type="password"], input[type="checkbox"]');
+
+regForm.addEventListener("submit", function(event) {
+  let allValid = true;
+
+  event.preventDefault();
+  regFormInputs.forEach(input => {
+    if (!input.checkValidity()) {
+      allValid = false;
+    }
+  });
+
+  if (!allValid) {
+    event.preventDefault();
+    alert("Please fill in all fields and check the box to accept our terms and conditons.")
+  } else {
+    window.location.href = '../index.html';
+  }
+});
